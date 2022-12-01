@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/juanmagiraldor/certificates-server/issues"
   },
-  "homepage": "https://github.com/juanmagiraldor/certificates-server#readme"
+  "homepage": "https://github.com/juanmagiraldor/certificates-server#readme",
+  "dependencies": {
+    "nodemon": "^2.0.20"
+  }
 }
