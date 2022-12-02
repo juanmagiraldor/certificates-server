@@ -15,6 +15,7 @@ const cert = new Certificate(certificate)
   .addMeshConfig()
   .addQr()
   .createIPFS()
-  .createStellar();
+  .createStellar()
+  .createJsonFile();
 
 console.log(cert);

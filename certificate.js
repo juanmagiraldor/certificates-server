@@ -11,7 +11,7 @@ class Certificate {
   }
 
   loadCertificateConfig() {
-    var obj = JSON.parse(
+    const obj = JSON.parse(
       fs.readFileSync("./data_source/certificates.json", "utf8")
     );
 
@@ -78,6 +78,17 @@ class Certificate {
   }
 
   createStellar() {
+    return this;
+  }
+
+  createJsonFile() {
+    const configObj = JSON.stringify(this.certificateObj, null, 2);
+    try {
+      fs.writeFileSync("config.json", configObj, "utf-8");
+    } catch (error) {
+      console.log(error);
+    }
+
     return this;
   }
 }
