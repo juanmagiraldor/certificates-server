@@ -1,0 +1,4 @@
+- Certificate Request: the data about the certificate to be generated.
+- Certificate Requests Source: the "place" where the system can read Certificate Requests. Every read, returns a collection of certificate requests as a JSON doc.
+- Certificate: a record in a consensus network ("blockchain") representing an attestation by an entity regarding another.
+- Certificate Template: a set of properties used to generate a certificate. It is used in conjunction with a Certificate Request to created a Certificate.
